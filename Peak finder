@@ -1,0 +1,14 @@
+arr=[a,b,c,d,e,f,g,h]
+#definition
+// if in arr b>=a & b>=c then b is the peak
+
+simple approach-> move from left to right and compare the elements untill you find a peak
+worst case complexity O(n)
+
+another approach-> find n/2th element check 
+
+if    arr[n/2]<arr[(n/2)-1] search for peak only in left side 
+elif  arr[n/2]<arr[(n/2)+1] search only on right side
+else  arr[n/2] is peak
+
+//this is recursive algorithm and keeps on breaking the array in n/2 so the complexity goes down to O(log N)
