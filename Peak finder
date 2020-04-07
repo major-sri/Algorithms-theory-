@@ -11,4 +11,5 @@ if    arr[n/2]<arr[(n/2)-1] search for peak only in left side
 elif  arr[n/2]<arr[(n/2)+1] search only on right side
 else  arr[n/2] is peak
 
+
 //this is recursive algorithm and keeps on breaking the array in n/2 so the complexity goes down to O(log N)
